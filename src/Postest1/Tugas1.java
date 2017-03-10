@@ -1,19 +1,15 @@
 package Postest1;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /**
  *
  * @author Asus
  */
+import javax.swing.JOptionPane;
 public class Tugas1 extends javax.swing.JFrame {
 
     /**
-     * Creates new form TugasKonversiSuhu
+     * Creates new form frmHelloWorld
      */
     public Tugas1() {
         initComponents();
@@ -28,257 +24,121 @@ public class Tugas1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        grub1 = new javax.swing.ButtonGroup();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        radio = new javax.swing.JRadioButton();
-        radio1 = new javax.swing.JRadioButton();
-        radio2 = new javax.swing.JRadioButton();
-        masukkan = new javax.swing.JButton();
-        txthasil = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        txtangka = new javax.swing.JTextField();
-        keluar = new javax.swing.JButton();
-        reset1 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        tnotelp2 = new javax.swing.JTextField();
+        tnotelp1 = new javax.swing.JTextField();
+        tnpm = new javax.swing.JTextField();
+        tprodi = new javax.swing.JTextField();
+        talamat = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setAutoRequestFocus(false);
-        setBackground(new java.awt.Color(51, 255, 51));
 
-        jPanel1.setBackground(new java.awt.Color(153, 255, 153));
+        jLabel1.setText("Data Mahasiswa");
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        jLabel3.setText("KONVERSI SUHU");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(143, 143, 143)
-                .addComponent(jLabel3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3)
-                .addContainerGap(18, Short.MAX_VALUE))
-        );
-
-        grub1.add(radio);
-        radio.setText("Celcius");
-        radio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                radioMouseClicked(evt);
-            }
-        });
-        radio.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setText("Simpan");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                radioActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
 
-        grub1.add(radio1);
-        radio1.setText("Kelvin");
-        radio1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                radio1MouseClicked(evt);
-            }
-        });
-        radio1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                radio1ActionPerformed(evt);
-            }
-        });
+        jLabel2.setText("NPM");
 
-        grub1.add(radio2);
-        radio2.setText("Farenheit");
-        radio2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                radio2ActionPerformed(evt);
-            }
-        });
+        jLabel3.setText("Prodi");
 
-        masukkan.setText("Masukkan");
-        masukkan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                masukkanActionPerformed(evt);
-            }
-        });
+        jLabel4.setText("No.Telp");
 
-        txthasil.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txthasilActionPerformed(evt);
-            }
-        });
+        jLabel5.setText("Alamat");
 
-        jLabel1.setText("konversi reamur");
-
-        jLabel2.setText("Hasil");
-
-        txtangka.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtangkaActionPerformed(evt);
-            }
-        });
-
-        keluar.setText("keluar");
-        keluar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                keluarActionPerformed(evt);
-            }
-        });
-
-        reset1.setText("reset");
-        reset1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                reset1ActionPerformed(evt);
-            }
-        });
+        jLabel6.setText("--");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(149, 149, 149)
+                            .addComponent(jButton1))
+                        .addGroup(layout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(jLabel5)
+                            .addGap(47, 47, 47)
+                            .addComponent(talamat))
+                        .addGroup(layout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(jLabel3)
+                            .addGap(56, 56, 56)
+                            .addComponent(tprodi))
+                        .addGroup(layout.createSequentialGroup()
+                            .addContainerGap()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel4)
+                                .addComponent(jLabel2))
+                            .addGap(43, 43, 43)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(tnpm)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(tnotelp1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jLabel6)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(tnotelp2, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(261, Short.MAX_VALUE)
-                        .addComponent(radio2))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
-                        .addComponent(txtangka, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(radio1)))
-                .addGap(68, 68, 68))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(57, 57, 57)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addComponent(jLabel2)
-                        .addGap(18, 18, 18)
-                        .addComponent(txthasil)
-                        .addGap(49, 49, 49)
-                        .addComponent(radio)
-                        .addGap(46, 46, 46))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(masukkan)
-                        .addGap(18, 18, 18)
-                        .addComponent(reset1)
-                        .addGap(18, 18, 18)
-                        .addComponent(keluar)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(134, 134, 134)
+                        .addComponent(jLabel1)))
+                .addContainerGap(161, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
-                .addComponent(radio2)
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(tnpm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(radio1)
-                    .addComponent(jLabel1)
-                    .addComponent(txtangka, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txthasil)
-                            .addComponent(jLabel2))
-                        .addGap(32, 32, 32)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(masukkan)
-                            .addComponent(reset1)
-                            .addComponent(keluar))
-                        .addGap(36, 36, 36))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(radio)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addComponent(jLabel3)
+                    .addComponent(tprodi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(talamat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(tnotelp1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tnotelp2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6))
+                .addGap(47, 47, 47)
+                .addComponent(jButton1)
+                .addGap(32, 32, 32))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txthasilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txthasilActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txthasilActionPerformed
-
-    private void txtangkaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtangkaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtangkaActionPerformed
-
-    private void keluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_keluarActionPerformed
-        // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_keluarActionPerformed
-
-    private void reset1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reset1ActionPerformed
-        // TODO add your handling code here:
-        txtangka.setText("");
-        txthasil.setText("");
-    }//GEN-LAST:event_reset1ActionPerformed
-
-    private void radioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_radioActionPerformed
-
-    private void radioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_radioMouseClicked
-        // TODO add your handling code here:
-        radio1.setSelected(false);
-        radio2.setSelected(false);
-    }//GEN-LAST:event_radioMouseClicked
-
-    private void radio1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_radio1MouseClicked
-        // TODO add your handling code here:
-        radio.setSelected(false);
-        radio2.setSelected(false);
-    }//GEN-LAST:event_radio1MouseClicked
-
-    private void masukkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_masukkanActionPerformed
-        // TODO add your handling code here:
-        double reamur,hasil = 0;
+        String npm = tnpm.getText();
+        String prodi = tprodi.getText();
+        String alamat = talamat.getText();
+        String notelp = tnotelp1.getText();
+        String notelp2 = tnotelp2.getText();
+        JOptionPane.showMessageDialog(this, "NPM : "+npm+"\nProdi : "+prodi+"\nAlamat : "+alamat+
+                "\nNo. Telp : "+notelp+notelp2);
         
-        reamur =Double.parseDouble(txtangka.getText());
-        
-        if(radio2.isSelected())
-        {
-            hasil = (9/4*reamur)+32;
-        }
-        else
-        if(radio1.isSelected())
-        {
-            hasil = (5/4*reamur)+273;
-        }
-        else
-        if(radio.isSelected())
-        {
-            hasil = (1.25)*reamur;
-        }
-        
-        txthasil.setText(String.valueOf(hasil));
-        
-    }//GEN-LAST:event_masukkanActionPerformed
-
-    private void radio2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radio2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_radio2ActionPerformed
-
-    private void radio1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radio1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_radio1ActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -306,7 +166,6 @@ public class Tugas1 extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Tugas1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -317,18 +176,17 @@ public class Tugas1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.ButtonGroup grub1;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton keluar;
-    private javax.swing.JButton masukkan;
-    private javax.swing.JRadioButton radio;
-    private javax.swing.JRadioButton radio1;
-    private javax.swing.JRadioButton radio2;
-    private javax.swing.JButton reset1;
-    private javax.swing.JTextField txtangka;
-    private javax.swing.JTextField txthasil;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JTextField talamat;
+    private javax.swing.JTextField tnotelp1;
+    private javax.swing.JTextField tnotelp2;
+    private javax.swing.JTextField tnpm;
+    private javax.swing.JTextField tprodi;
     // End of variables declaration//GEN-END:variables
 }
