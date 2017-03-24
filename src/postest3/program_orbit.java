@@ -24,9 +24,9 @@ public class program_orbit extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         panel_hasil = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         panel_input = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         panle_atas = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         panel_bawah = new javax.swing.JPanel();
@@ -46,36 +46,41 @@ public class program_orbit extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 204, 255));
         jPanel1.setLayout(new java.awt.CardLayout());
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("D:\\400px-Solar_System_size_to_scale.svg.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Asus\\Documents\\NetBeansProjects\\Visual_B_1515015068_199609\\400px-Solar_System_size_to_scale.svg.png")); // NOI18N
+        jLabel1.setText("jLabel1");
 
         javax.swing.GroupLayout panel_hasilLayout = new javax.swing.GroupLayout(panel_hasil);
         panel_hasil.setLayout(panel_hasilLayout);
         panel_hasilLayout.setHorizontalGroup(
             panel_hasilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel4)
+            .addGroup(panel_hasilLayout.createSequentialGroup()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         panel_hasilLayout.setVerticalGroup(
             panel_hasilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_hasilLayout.createSequentialGroup()
-                .addComponent(jLabel4)
+                .addComponent(jLabel1)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jPanel1.add(panel_hasil, "card17");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\blue-moon.jpg")); // NOI18N
-        jLabel2.setText("jLabel2");
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Asus\\Documents\\NetBeansProjects\\Visual_B_1515015068_199609\\blue-moon.jpg")); // NOI18N
+        jLabel4.setText("jLabel4");
 
         javax.swing.GroupLayout panel_inputLayout = new javax.swing.GroupLayout(panel_input);
         panel_input.setLayout(panel_inputLayout);
         panel_inputLayout.setHorizontalGroup(
             panel_inputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 420, Short.MAX_VALUE)
+            .addGroup(panel_inputLayout.createSequentialGroup()
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 459, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         panel_inputLayout.setVerticalGroup(
             panel_inputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_inputLayout.createSequentialGroup()
-                .addComponent(jLabel2)
+                .addComponent(jLabel4)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -93,16 +98,16 @@ public class program_orbit extends javax.swing.JFrame {
         panle_atasLayout.setHorizontalGroup(
             panle_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panle_atasLayout.createSequentialGroup()
-                .addContainerGap(177, Short.MAX_VALUE)
+                .addContainerGap(187, Short.MAX_VALUE)
                 .addComponent(jLabel3)
-                .addGap(129, 129, 129))
+                .addGap(159, 159, 159))
         );
         panle_atasLayout.setVerticalGroup(
             panle_atasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panle_atasLayout.createSequentialGroup()
-                .addGap(33, 33, 33)
+                .addGap(36, 36, 36)
                 .addComponent(jLabel3)
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
         getContentPane().add(panle_atas, java.awt.BorderLayout.PAGE_START);
@@ -114,7 +119,7 @@ public class program_orbit extends javax.swing.JFrame {
         panel_bawah.setLayout(panel_bawahLayout);
         panel_bawahLayout.setHorizontalGroup(
             panel_bawahLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 527, Short.MAX_VALUE)
+            .addGap(0, 567, Short.MAX_VALUE)
         );
         panel_bawahLayout.setVerticalGroup(
             panel_bawahLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -133,7 +138,7 @@ public class program_orbit extends javax.swing.JFrame {
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 233, Short.MAX_VALUE)
+            .addGap(0, 307, Short.MAX_VALUE)
         );
 
         getContentPane().add(jPanel4, java.awt.BorderLayout.LINE_END);
@@ -222,7 +227,7 @@ System.exit(0);
     private javax.swing.JButton btn_about;
     private javax.swing.JButton btn_exit;
     private javax.swing.JButton btn_home;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
